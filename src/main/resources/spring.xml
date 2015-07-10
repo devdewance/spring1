@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id ="date1" class ="java.util.Date" >
+<property name ="date" value="6" />
+<property name ="month" value ="06" />
+<property name ="year" value ="115" />
+</bean>
+<bean id="add" class="spring1.Address">
+		<property name="zip" value="110092"></property>
+		<property name="city" value="LAxminagar"></property>
+		<property name="state" value="Delhi"></property>
+		
+	</bean>
+
+	<bean id="object" class="spring1.Employee" >
+		<property name="id" value="101"></property>
+		<property name="name" value="parashar devashish"></property>
+		<property name="address" ref="add"></property>
+		<property name="date" ref="date1"></property>
+	</bean>
+	
+	
+	
+</beans>
